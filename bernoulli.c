@@ -2,7 +2,7 @@
  * X ~ Ber(p)
  */
 
-#include "basic.h"
+#include "base.h"
 
 // E(X)
 double ber_get_esperanca(double p) {

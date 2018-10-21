@@ -1,5 +1,4 @@
-#include "basic.h"
-
+#include "base.h"
 
 // Fatorial: n!
 long int fat(int n) {

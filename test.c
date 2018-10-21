@@ -7,6 +7,13 @@ void TEST(const char *message, int is_passed) {
     if (is_passed) printf("OK\n");
     else {
         printf("FAIL\n");
-        exit(1);
+    //        exit(1);
     };
 }
+
+void TEST_DOUBLE(const char *message, double a, double b) {
+    int res = ((a - b) < 0.0001) && ((b - a) < 0.0001);
+    if (!res)
+        printf("%lf != %lf\n", a, b);
+    TEST(message, res);
+    }
